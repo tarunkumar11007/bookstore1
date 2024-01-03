@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Registration Form</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            background-image: url(images/bkg5.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .r_logo{
+            img{
+                margin-left: 98px;
+                height: 100px;
+            }
+            
+        }
+        .container_3 {
+            width: 400px;
+            height: 800px;
+            padding: 20px;
+            background-color: #fbfcfc;
+            padding-right: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .A {
+            margin-left: 20px;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #040303;
+        }
+        .reg_box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .btn_6 {
+            background-color: #fbfcfc;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .btn_6:hover {
+            background-color: #1ba258;
+            color: rgb(9, 7, 7);
+        }
+        i{
+            margin-top: 15px;
+            margin-left: 49%;
+            color: #000000;
+            font-size: 20px;
+        }
+        i:hover{
+            color: #ff5a3d;
+            font-size: 22px;
+        } 
+        p{
+            top: 0;
+            font-size: 10px;
+            margin-left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container_3">
+        <div class="r_logo">
+            <img src="images/logo.png" >
+        </div>
+        <h2>Registration Form</h2>
+        <div class="A">
+            <form>
+                <span  class="material-symbols-outlined">
+                    person
+                    </span>
+                <label for="username"><b>Username:</b></label>
+                <input type="text" id="username" name="username" class="reg_box" placeholder="Username" required><br><br>
+                <span  class="material-symbols-outlined">
+                    mail
+                    </span>
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" class="reg_box" placeholder="Email" required><br><br>
+        <span  class="material-symbols-outlined">
+                lock
+                </span>
+                <label for="password"><b>Password:</b></label>
+                <input type="password" id="password" name="password" class="reg_box" placeholder="Password" required><br><br>
+                <label for="date"><b>Date of birth:</b></label>
+                <input type="date" id="date"><br><br>
+                <b>Gender:</b>
+                <input type="radio" id="male" name="gender" value="male" checked><b>Male</b>
+                <input type="radio" id="female" name="gender" value="female"><b>Female</b><br><br>
+                <label for="" style="color: #030b05;"><b>Country:</b></label><br><br>
+                <select id="country" name="country" style="width: 100%; height: 30px;">
+                    <option value="usa">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <!-- Add more options as needed -->
+                  </select><br><br>
+                  <label for="Fascinate "><b>Fascinate:</b></label>
+            <ul>
+                <li><input type="checkbox" id="music" name="interests[]" value="music"> <label for="Fiction">Fiction</label></li>
+                <li><input type="checkbox" id="sports" name="interests[]" value="sports"> <label for="Non-Fiction">Non-Fiction</label></li>
+                <li><input type="checkbox" id="movies" name="interests[]" value="movies"> <label for="Mystery">Mystery</label></li>
+            </ul>
+                <button class="btn_6" type="submit">Register</button>
+            </form>
+        </div>
+        <div>
+            <a href="home.html"><i class="fa-solid fa-house"></i></a>
+            <p>Back to home</p>
+        </div> 
+    </div>
+</body>
+</html>
